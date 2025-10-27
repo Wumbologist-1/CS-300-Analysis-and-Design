@@ -1,7 +1,7 @@
-#  CS 300 – Data Structures and Algorithms Portfolio Submission  
+#  CS 300 – Data Analysis and Designs Portfolio Submission  
 
 ### Southern New Hampshire University  
-**Course:** CS 300 – Data Structures and Algorithms  
+**Course:** CS 300 – Data Analysis and Design
 **Student:** Luis Tomassini  
 **Projects Included:**  
 - **Project One:** Runtime and Memory Analysis (Vector, Hash Table, Binary Search Tree)  
