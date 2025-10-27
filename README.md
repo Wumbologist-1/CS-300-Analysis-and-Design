@@ -1,54 +1,69 @@
-CS 300 – Data Structures and Algorithms Portfolio Submission
-Southern New Hampshire University
+#  CS 300 – Data Structures and Algorithms Portfolio Submission  
 
-Course: CS 300 – Data Structures and Algorithms
-Student: Luis Tomassini
-Project Components:
+### Southern New Hampshire University  
+**Course:** CS 300 – Data Structures and Algorithms  
+**Student:** Luis Tomassini  
+**Projects Included:**  
+- **Project One:** Runtime and Memory Analysis (Vector, Hash Table, Binary Search Tree)  
+- **Project Two:** Working C++ Advising Assistance Program (BST implementation)  
 
-Project One: Runtime and Memory Analysis (Vector, Hash Table, Binary Search Tree)
+---
 
-Project Two: Working C++ Advising Assistance Program (BST implementation)
+##  Project Overview  
 
-Project Overview
+This course focused on designing and implementing an advising assistance program for the ABCU Computer Science department. The goal was to help academic advisors quickly access course information and prerequisites using efficient data structures.  
 
-The goal of this course was to design and implement an advising assistance program for the ABCU Computer Science department. The program helps academic advisors quickly retrieve course information and prerequisites from a structured dataset.
+In **Project One**, I analyzed how different data structures performed in terms of runtime and memory use. In **Project Two**, I used C++ to build a working version of the program that stored and retrieved course data using a Binary Search Tree (BST). This structure made it possible to print the courses in alphanumeric order while keeping lookups fast and organized.
 
-In Project One, I analyzed how different data structures (Vector, Hash Table, and Binary Search Tree) perform in terms of runtime and memory efficiency. In Project Two, I implemented the program in C++ using a Binary Search Tree, which provided efficient course lookups and naturally ordered course listings. Together, these projects demonstrate practical understanding of algorithmic design, data structure selection, and software maintainability.
+---
 
-Problem and Approach
+##  Problem and Approach  
 
-The main problem I solved was how to efficiently store and retrieve course information so advisors could view a full course list or quickly find details about a specific course. My approach centered on selecting a data structure that balances lookup speed, sorted traversal, and memory efficiency.
+The main problem I needed to solve was how to store and retrieve course data efficiently so advisors could view a full course list or search for a specific course. My approach focused on balancing search speed, memory use, and code simplicity.  
 
-Understanding data structures is crucial because the way data is stored directly impacts how fast and flexible a program can be. By comparing runtime complexities (O(n), O(log n), and O(1)), I was able to justify why a Binary Search Tree was ideal for this program, offering fast searches while maintaining alphanumeric order without needing a separate sorting pass.
+Understanding data structures is key to writing efficient programs. Each option—Vector, Hash Table, and BST—has strengths and weaknesses depending on the situation. After comparing their Big O performance, I found that a Binary Search Tree gave me the best mix of fast lookups and sorted output without needing an extra sort function.
 
-Roadblocks and Solutions
+---
 
-A key roadblock was ensuring consistent file input handling and correctly parsing comma-separated course data. Initially, output buffering in Windows PowerShell also caused the menu text to appear blank. I resolved these issues by adding flush commands to synchronize input and output streams and by applying detailed file validation checks to handle malformed or duplicate data lines gracefully.
+##  Roadblocks and How I Solved Them  
 
-These debugging experiences reinforced the importance of testing in multiple environments and building defensive code that anticipates user and system variability.
+One of the main issues I ran into was getting the file input to work smoothly. The CSV data needed to be parsed correctly, and I had to make sure prerequisites matched valid courses in the file. Another challenge came from PowerShell’s output buffering, which caused the menu text to appear blank when I first ran the program.  
 
-Impact on My Software Design Process
+To fix it, I added `cout.flush()` and re-tied the input/output streams to make sure everything displayed right away. I also added clear validation checks for file formatting and duplicates. These fixes made the program stable and user-friendly, which felt great after hours of debugging.
 
-Working on this project expanded how I think about program design. Instead of jumping straight into code, I began with pseudocode and runtime analysis, which clarified my logic and made implementation smoother. I now appreciate the value of separating conceptual design from actual coding, especially when comparing how each data structure affects performance and scalability.
+---
 
-I also learned to prioritize clarity, consistency, and modularity by building each function with a clear, single responsibility. This approach made it easier to maintain and test each part of the program independently.
+##  What I Learned About Software Design  
 
-Evolution in Writing Maintainable, Readable, and Adaptable Code
+Working on this project changed the way I design programs. I learned to start with pseudocode and plan out logic before jumping into coding. That approach made it much easier to identify which data structure would fit the problem best.  
 
-Through iterative design and testing, I developed habits that improve code maintainability and readability. I used descriptive variable names, in-line comments, and consistent formatting. By keeping all logic in one self-contained .cpp file, I ensured simplicity while maintaining extensibility so future developers can easily adapt the program to use other data structures such as hash maps or balanced BSTs.
+It also taught me how to think about scalability early on—how one choice in structure or algorithm can change performance dramatically. By designing with clarity and testing in small steps, I built a more reliable and readable program.
 
-This project also reinforced the importance of producing user-friendly interfaces. The final version mirrors industry-standard practices, including clear prompts, error handling, and logical flow. These elements all contribute to a professional, maintainable codebase.
+---
 
-Repository Contents
+## 🧩 How My Coding Style Has Evolved  
 
-ProjectTwo.cpp – Final working C++ program (BST implementation)
+Before this course, I focused mostly on getting programs to work. Now, I focus on *how* they work. I write code that’s organized, commented, and easy for others to read or improve later. Keeping all logic in one `.cpp` file helped me keep things simple but still structured.  
 
-ABCU_Advising_Program_Input.csv – Input data file
+I’ve also started paying more attention to naming conventions, modular design, and consistent formatting. These details make a huge difference in readability and maintenance. The project ended up feeling like something that could actually be used in a real advising office, which was a big confidence boost.
 
-Runtime_Analysis.pdf – Analysis from Project One (O(n), O(log n), and O(1) comparison)
+---
 
-README.md – Reflection and documentation (this file)
+##  Repository Contents  
 
-Summary
+- `ProjectTwo.cpp` — Final C++ source code (Binary Search Tree implementation)  
+- `ABCU_Advising_Program_Input.csv` — Course input file  
+- `Runtime_Analysis.pdf` — Project One runtime and memory comparison  
+- `README.md` — Reflection and portfolio documentation (this file)  
 
-This project deepened my understanding of how data structures shape software efficiency and usability. It strengthened my ability to design with scalability in mind, debug in diverse environments, and write code that is both readable and adaptable. These are skills that directly apply to professional software development.
+---
+
+## 🧾 Final Reflection  
+
+This project helped me grow as both a programmer and a problem solver. It showed me how important it is to understand data structures and algorithms before writing a single line of code. I learned how to plan, debug, and refine my design so the end result was not only functional but efficient and maintainable.  
+
+It was rewarding to see the program finally load, sort, and print every course exactly as expected. That moment tied together everything I learned in this course—from analyzing Big O performance to implementing a complete working solution.  
+
+Overall, this experience gave me a stronger foundation for writing clean, adaptable, and professional-quality code that I can be proud to showcase in my portfolio.
+
+---
