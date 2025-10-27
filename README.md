@@ -41,7 +41,7 @@ It also taught me how to think about scalability early on—how one choice in st
 
 ---
 
-## 🧩 How My Coding Style Has Evolved  
+##  How My Coding Style Has Evolved  
 
 Before this course, I focused mostly on getting programs to work. Now, I focus on *how* they work. I write code that’s organized, commented, and easy for others to read or improve later. Keeping all logic in one `.cpp` file helped me keep things simple but still structured.  
 
@@ -58,7 +58,7 @@ I’ve also started paying more attention to naming conventions, modular design,
 
 ---
 
-## 🧾 Final Reflection  
+##  Final Reflection  
 
 This project helped me grow as both a programmer and a problem solver. It showed me how important it is to understand data structures and algorithms before writing a single line of code. I learned how to plan, debug, and refine my design so the end result was not only functional but efficient and maintainable.  
 
